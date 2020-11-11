@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VIGENERE</title>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CIFRADO CESAR</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/validar.js"></script>
+	<script src="js/VigiMensaje.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+	<center>
+		
+	<header class="contenido-encabezado" id="contenido-encabezado">
+		<div class="texto-encabezado">
+			<p class="icono">
+				<i class="fas fa-user-secret"></i>
+
+			</p>
+			
+			<h1 class="titulo">
+				CIFRADO<br>VIGENERE<br>
+				
+			
+
+	<h1><font size="3" color="#CAE9FF" face="verdana">Ingresa el texto a cifrar
+</h1></font>
+	<textarea id="cadena" class="cuadro" onkeypress="return validar_cadena(event)"></textarea>
+	<h1><font size="3" color="#CAE9FF" face="verdana">Ingresa la clave
+</h1></font>
+	<textarea id="clave" class="cuadro" onkeypress="return validar_clave(event)"></textarea>
+
+	<p><input type="button" class="botones" value="Cifrar" onclick="validar_cifrado()">
+		<span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+	<input type="button"  class="botones" value="Descifrar" onclick="validar_descifrado()">
+	<span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+
+
+	</p>
+
+
+	<div id="resultado" class="resultado"></div>
+
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+
+</center>
+
+</body>
+</html>
